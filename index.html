@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="jeopardy.css" />
+    <title>Jeopardy!!</title>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        class="logo"
+        src="https://fontmeme.com/permalink/200711/c39aba5537bad618c8cd56f8142641d5.png"
+        alt="jeopardy-font"
+      />
+      <button id="new-game-btn">START GAME</button>
+      <img
+        id="loading-gif"
+        class="hidden"
+        src="https://64.media.tumblr.com/166b89ee3950ef0ec2bacb25dcfffaa6/tumblr_mmlf2auxEK1r0ralmo1_500.gifv"
+        alt="loading image"
+      />
+      <table class="table" id="gameboard"></table>
+    </div>
+    <script src="https://unpkg.com/jquery"></script>
+    <script src="https://unpkg.com/axios/dist/axios.js"></script>
+    <script src="https://unpkg.com/lodash"></script>
+    <script src="jeopardy.js"></script>
+  </body>
+</html>
