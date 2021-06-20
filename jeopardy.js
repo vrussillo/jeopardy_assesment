@@ -51,7 +51,7 @@ async function getCategoryIds() {
 
 async function getCategory(catId) {
   try {
-    let res = await axios.get("http://jservice.io/api/category", {
+    let res = await axios.get("https://jservice.io/api/category", {
       params: { id: catId },
     });
     if (res.data.clues_count > 5) {
